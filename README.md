@@ -18,11 +18,14 @@ This is the full lighthouse report in PDF format before any optimization.  <a hr
 
 
 This is the summary of the lighthouse result after optimization.
+
 <img src="https://github.com/Dev-kris/OC-Optomize-Existing-Website-SEO/blob/main/site-audit/audit-after-changes.png" height="200px">
 
-This is the full lighthouse report in PDF format after optimization.  <a href="https://github.com/Dev-kris/OC-Optomize-Existing-Website-SEO/blob/main/site-audit/Lighthouse%20Report%20After.pdf">:open_file_folder:</a>
+This is the full lighthouse report in PDF format after optimization. 
 
-The live version of Mike's site *after* changes can be found <a href="https://dev-kris.github.io/OC-Optomize-Existing-Website-SEO/index.html"> HERE </a>
+<a href="https://github.com/Dev-kris/OC-Optomize-Existing-Website-SEO/blob/main/site-audit/Lighthouse%20Report%20After.pdf">:open_file_folder:</a>
+
+The live version of Mike's site *after* changes can be found. <a href="https://dev-kris.github.io/OC-Optomize-Existing-Website-SEO/index.html"> HERE </a>
 **status: complete**
 
 Upon auditing the original site many mistakes and Blackhat techniques were found. Notation of these can be found within the audit spreadsheet and the presentation.
