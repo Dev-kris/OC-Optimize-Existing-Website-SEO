@@ -35,7 +35,7 @@ function setUpSpecialNavs() {
 }
 
 function extraNavFuncs() {
-    $(".site-navigation a").click(function(t) {
+    $(".site-navigation a").on('click' ,function(t) {
         $(t.target).closest(".dropdown-toggle").length || $(".navbar-collapse").collapse("hide")
     }), $("a.dropdown-toggle").click(function(t) {
         $(this).parent().addClass("target-open-menu"), $(this).closest(".dropdown-menu").find(".dropdown.open").each(function(t) {
@@ -65,7 +65,7 @@ function scrollToTarget(t) {
 }
 
 function animateWhenVisible() {
-    hideAll(), inViewCheck(), $(window).scroll(function() {
+    hideAll(), inViewCheck(), $(window).on('scroll' ,function() {
         inViewCheck(), scrollToTopView(), stickyNavToggle()
     })
 }
@@ -172,7 +172,7 @@ function addSwipeSupport() {
 }
 
 function addKeyBoardSupport() {
-    $(window).keydown(function(t) {
+    $(window).on('keydown' ,function(t) {
         37 == t.which ? $(".prev-lightbox").is(":visible") && $(".prev-lightbox").click() : 39 == t.which && $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
     })
 }
@@ -189,14 +189,14 @@ function addLightBoxSwipeSupport() {
     })
 }
 $(document).ready(function() {
-    $("#scroll-hero").click(function(t) {
+    $("#scroll-hero").on('click' ,function(t) {
         t.preventDefault(), $("html,body").animate({
             scrollTop: $("#scroll-hero").closest(".bloc").height()
         }, "slow")
     }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
-}), $(window).load(function() {
+}), $(window).on('load' ,function() {
     setFillScreenBlocHeight(), animateWhenVisible(), $("#page-loading-blocs-notifaction").remove()
-}).resize(function() {
+}).on('resize' ,function() {
     setFillScreenBlocHeight()
 }), $(function() {
     $('[data-toggle="tooltip"]').tooltip()
