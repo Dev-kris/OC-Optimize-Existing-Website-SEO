@@ -37,3 +37,13 @@ This practice is easily detectable and will result in negative ranking or outrig
 An example is provided below.
 
 <img src="https://github.com/Dev-kris/OC-Optimize-Existing-Website-SEO/blob/main/site-audit/blackhat-example.png" height="100px">
+
+## Best Practices
+While auditing this site it was found to be using an outdated version of jQuery (2.1.0).  
+It has been migrated to the current release version to address potential security vulnerabilities. Current version is (3.5.1).  
+Migration was handled using JQMigrate to ensure backwards compatibility with existing scripts.  
+This identified the following issues:  
+<img src="https://github.com/Dev-kris/OC-Optimize-Existing-Website-SEO/blob/main/site-audit/jquery-migration-errors.png" height="200px">
+
+These were fixed by changing the deprecated shorthand to current standards.
+
