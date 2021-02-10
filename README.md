@@ -47,3 +47,5 @@ This identified the following issues:
 
 These were fixed by changing the deprecated shorthand to current standards.
 
+
+Site is now awaiting review and meeting with client to review suggested revisions is scheduled. 
